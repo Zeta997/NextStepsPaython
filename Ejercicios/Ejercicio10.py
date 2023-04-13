@@ -9,18 +9,18 @@ _listAllString=[]
 _listStringWithVowel=[]
 _endProgram=False
 
-def _startPogram():
+def startPogram():
     global _getStringInputUser
     
     while _endProgram:
         _getStringInputUser= input("Introduce una cadena de caracteres o frase: ")
         _listAllString.append(_getStringInputUser)
-        _CompareVowel()
-        _FinishProgram()
+        CompareVowel()
+        FinishProgram()
         
 
 
-def _CompareVowel():
+def CompareVowel():
     _addString=""
     for i in _listAllString:
         _addString=i
@@ -31,7 +31,7 @@ def _CompareVowel():
                     break
                 
             
-def _FinishProgram():
+def FinishProgram():
     global _endProgram
     _getInputUser=input("¿Quieres finalizar el programa(si/no): ")
     if _getInputUser== "si":

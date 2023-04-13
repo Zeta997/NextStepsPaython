@@ -5,11 +5,10 @@
 
 _getStringUser=""
 
-def _startProgram():
+def startProgram():
 
-    while True:
         _getStringUser=input("Introduce una frase o palabra: ")
         for i in _getStringUser:
             print(i)
-        break
+        
 

@@ -7,7 +7,7 @@ _intValue=[]
 _multiplos=[]
 _endProgram=False
 
-def _startProgrma():
+def startProgrma():
     global _getInputUser, _endProgram
 
     while _endProgram==False:
@@ -17,23 +17,23 @@ def _startProgrma():
 
             _getInputUser=int(_getInputUser)
             _intValue.append(_getInputUser)
-            _FinishProgram()
+            FinishProgram()
 
         except ValueError:
             print("Debes introducir un valor entero.")
             _getInputUser=""
 
 
-def _FinishProgram():
+def FinishProgram():
 
 
     _finish=input("¿Deseas finalizar?(si/no): ")
     if _finish=="si":
-        _GetMultiplos()       
+        GetMultiplos()       
     elif _finish=="no":
         _endProgram=False
 
-def _GetMultiplos():
+def GetMultiplos():
     
     for i in _intValue:
         if i%3==0:
