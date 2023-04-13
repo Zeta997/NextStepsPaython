@@ -12,4 +12,4 @@ def _startProgram():
         for i in _getStringUser:
             print(i)
 
-_startProgram()
+

@@ -43,4 +43,4 @@ def _GetMultiplos():
     print(_multiplos)
     _endProgram=True
 
-_startProgrma()
+
