@@ -1,6 +1,6 @@
 
 
-import Ejercicios2.Ejercicio1 as ej1
+from Ejercicio1 import ejercicio1
 import Ejercicios2.Ejercicio2 as ej2
 import Ejercicios2.Ejercicio3 as ej3
 import Ejercicios2.Ejercicio4 as ej4
@@ -13,7 +13,6 @@ import Ejercicios.Ejercicio7 as ej7
 import Ejercicios.Ejercicio8 as ej8
 import Ejercicios.Ejercicio10 as ej10
 import Ejercicios.Ejercicio11 as ej11
-
 def main():
     print("--------Inicio del Programa---------")
     print("Elije un ejercicio del 1-11")
@@ -34,7 +33,7 @@ def main():
                 print('Fin del programa')
                 break
             elif _getInput=='1':
-                ej1.Ejercicios1()
+                ejercicio1()
                 break
             elif _getInput=='2':
                 ej2.Ejercicio2()

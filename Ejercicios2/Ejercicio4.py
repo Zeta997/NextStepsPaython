@@ -15,4 +15,3 @@ def Ejercicio4():
     else:
         horaActualizada = hora
     print(f"La hora {hora.hour}:{hora.minute} en formato 24 horas es {horaActualizada.hour}:{horaActualizada.minute}")
-Ejercicio4()

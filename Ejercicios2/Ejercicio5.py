@@ -9,4 +9,3 @@ def Ejercicio5():
     for i in range(len(cadena)-1,-1,-1):
         cadenaInversa += cadena[i]
     print(f"La cadena invertida de {cadena} es {cadenaInversa}")
-Ejercicio5()

@@ -11,4 +11,3 @@ def Ejercicio3():
             palabras += 1
         i += 1
     print(f"El número de palabras de la cadena es {palabras}")
-Ejercicio3()

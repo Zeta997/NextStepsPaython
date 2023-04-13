@@ -13,4 +13,3 @@ def Ejercicio6():
         print(f"Se ha producido el error: \n{e} \n Porque no ha introducido un número entero")
     else:
         print(f"La suma de todos los números desde 1 hasta {numero} es {suma}")
-Ejercicio6()
