@@ -5,42 +5,25 @@
 _getInputUser=""
 _intValue=[]
 _multiplos=[]
-_endProgram=False
 
 def startProgrma():
-    global _getInputUser, _endProgram
-
-    while _endProgram==False:
-        
+    while True:       
         _getInputUser=input("Introduce valores: ")
         try:
 
-            _getInputUser=int(_getInputUser)
+            int(_getInputUser)
             _intValue.append(_getInputUser)
-            FinishProgram()
-
+            _finish=input("¿Deseas finalizar?(si/no): ")
+            if _finish=="si":
+                _multiplos=[x for x in _intValue if int(x)%3==0]
+                if _multiplos==[]:
+                    print("No hay multiplos del 3")
+                    break 
+                else:
+                    print(_multiplos)
+                    break 
         except ValueError:
             print("Debes introducir un valor entero.")
-            _getInputUser=""
-
-
-def FinishProgram():
-
-
-    _finish=input("¿Deseas finalizar?(si/no): ")
-    if _finish=="si":
-        GetMultiplos()       
-    elif _finish=="no":
-        _endProgram=False
-
-def GetMultiplos():
-    
-    for i in _intValue:
-        if i%3==0:
-            _multiplos.append(i)
-        else:
-            continue
-    print(_multiplos)
-    _endProgram=True
+            continue 
 
 
