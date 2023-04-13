@@ -8,7 +8,7 @@ listString=[]
 _getNumberOfString=""
 _finishInstruction=False
 
-def _GetStringUser():
+def _startProgram():
     global _getStringUser, _finishInstruction
 
     while _finishInstruction==False:
@@ -45,7 +45,7 @@ def _ConditionsToWork():
 
 
 
-_GetStringUser()
+_startProgram()
 
 
 

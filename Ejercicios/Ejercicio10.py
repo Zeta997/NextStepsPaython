@@ -9,7 +9,7 @@ _listAllString=[]
 _listStringWithVowel=[]
 _endProgram=False
 
-def _GetInputUser():
+def _startPogram():
     global _getStringInputUser
     
     while _endProgram:
@@ -41,7 +41,7 @@ def _FinishProgram():
 
 
 
-_GetInputUser()  
+_startPogram()  
     
 
 
