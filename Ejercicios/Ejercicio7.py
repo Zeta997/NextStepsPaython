@@ -7,9 +7,9 @@ _getStringUser=""
 
 def _startProgram():
 
-    while _getStringUser=="":
+    while True:
         _getStringUser=input("Introduce una frase o palabra: ")
         for i in _getStringUser:
             print(i)
-
+        break
 
