@@ -1,20 +1,17 @@
+from Ejercicios2 import Ejercicio1 
+from Ejercicios2 import Ejercicio2
+from Ejercicios2 import Ejercicio3
+from Ejercicios2 import Ejercicio4
+from Ejercicios2 import Ejercicio5
+from Ejercicios2 import Ejercicio6
+from Ejercicios2 import Ejercicio9
+from Ejercicios import Ejercicio7
+from Ejercicios import Ejercicio8
+from Ejercicios import Ejercicio10 
+from Ejercicios import Ejercicio11 
 
 
-import Ejercicios2.Ejercicio1 as ej1
-import Ejercicios2.Ejercicio2 as ej2
-import Ejercicios2.Ejercicio3 as ej3
-import Ejercicios2.Ejercicio4 as ej4
-import Ejercicios2.Ejercicio5 as ej5
-import Ejercicios2.Ejercicio6 as ej6
-import Ejercicios2.Ejercicio9 as ej9
-
-
-import Ejercicios.Ejercicio7 as ej7
-import Ejercicios.Ejercicio8 as ej8
-import Ejercicios.Ejercicio10 as ej10
-import Ejercicios.Ejercicio11 as ej11
-
-def main():
+def _main():
     print("--------Inicio del Programa---------")
     print("Elije un ejercicio del 1-11")
     print("Para salir escriba 0")
@@ -26,46 +23,45 @@ def main():
         try:
             int(_getInput)
        
-        except ValueError:
-            print("Solo se permiten valores enteros del 0 al 11")
-            return True
-        else:
             if _getInput=='0':
                 print('Fin del programa')
                 break
             elif _getInput=='1':
-                ej1.Ejercicios1()
+                Ejercicio1.Ejercicios1()
                 break
             elif _getInput=='2':
-                ej2.Ejercicio2()
+                Ejercicio2.Ejercicio2()
                 break
             elif _getInput=='3':
-                ej3.Ejercicio3()
+                Ejercicio3.Ejercicio3()
                 break
             elif _getInput=='4':
-                ej4.Ejercicio4()
+                Ejercicio4.Ejercicio4()
                 break
             elif _getInput=='5':
-                ej5.Ejercicios1()
+                Ejercicio5.Ejercicio5()
                 break
             elif _getInput=='6':
-                ej6.Ejercicios1()
+                Ejercicio6.Ejercicio6()
                 break
             elif _getInput=='7':
-                ej7._startProgram()
+                Ejercicio7._startProgram()
                 break
             elif _getInput=='8':
-                ej8._startProgram()
+                Ejercicio8._startProgram()
                 break
             elif _getInput=='9':
-                ej9.Ejercicio9()  
+                Ejercicio9.Ejercicio9() 
                 break
             elif _getInput=='10':
-                ej10._startPogram()
+                Ejercicio10._startPogram()
                 break
             elif _getInput=='11':
-                ej11._startProgrma()
+                Ejercicio11._startProgrma()
                 break
+        except ValueError:
+            print("Solo se permiten valores enteros del 0 al 11")
+            return True
 
 
-main()
+_main()
