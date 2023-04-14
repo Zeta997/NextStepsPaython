@@ -5,6 +5,7 @@ from Ejercicios2 import Ejercicio4
 from Ejercicios2 import Ejercicio5
 from Ejercicios2 import Ejercicio6
 from Ejercicios2 import Ejercicio9
+# from Ejercicios2 import *
 from Ejercicios import Ejercicio7
 from Ejercicios import Ejercicio8
 from Ejercicios import Ejercicio10 
