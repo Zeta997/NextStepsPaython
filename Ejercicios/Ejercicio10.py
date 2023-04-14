@@ -7,42 +7,30 @@ _getStringInputUser=""
 _listVowel=['a','e','i','o','u','A','E','I','O','U']
 _listAllString=[]
 _listStringWithVowel=[]
-_endProgram=False
 
-def _startPogram():
-    global _getStringInputUser
+def startPogram():
     
-    while _endProgram:
-        _getStringInputUser= input("Introduce una cadena de caracteres o frase: ")
-        _listAllString.append(_getStringInputUser)
-        _CompareVowel()
-        _FinishProgram()
-        
-
-
-def _CompareVowel():
-    _addString=""
+    while True:
+        _getStringInputUser= input("Introduce una cadena de caracteres: ")
+        _listAllString.append(_getStringInputUser)       
+        _getInputUser=input("¿Quieres finalizar el programa(si/no): ")
+        if _getInputUser== "si":
+            CompareVowel()
+            print(_listStringWithVowel)
+            break
+    
+def CompareVowel():
+    
     for i in _listAllString:
-        _addString=i
-        for a in _addString[0:]:
-            for e in _listVowel[0:]:
-                if a==e:
-                    _listStringWithVowel.append(_addString)
+            _valoranadido=False      
+            for a in i[0:]: 
+                if not _valoranadido:
+                    for e in _listVowel[0:]:
+                        if a==e:
+                            _listStringWithVowel.append(i)
+                            _valoranadido=True
+                            break
+                else:
                     break
-                
-            
-def _FinishProgram():
-    global _endProgram
-    _getInputUser=input("¿Quieres finalizar el programa(si/no): ")
-    if _getInputUser== "si":
-        _endProgram=True
-    elif _getInputUser=="no":
-        _endProgram=False
 
-
-
-
-    
-
-
-
+        

@@ -46,19 +46,19 @@ def _main():
                 Ejercicio6.Ejercicio6()
                 break
             elif _getInput=='7':
-                Ejercicio7._startProgram()
+                Ejercicio7.startProgram()
                 break
             elif _getInput=='8':
-                Ejercicio8._startProgram()
+                Ejercicio8.startProgram()
                 break
             elif _getInput=='9':
                 Ejercicio9.Ejercicio9() 
                 break
             elif _getInput=='10':
-                Ejercicio10._startPogram()
+                Ejercicio10.startPogram()
                 break
             elif _getInput=='11':
-                Ejercicio11._startProgrma()
+                Ejercicio11.startProgrma()
                 break
         except ValueError:
             print("Solo se permiten valores enteros del 0 al 11")
