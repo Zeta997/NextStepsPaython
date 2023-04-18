@@ -28,7 +28,7 @@ def _main():
                 print('Fin del programa')
                 break
             elif _getInput=='1':
-                Ejercicio1.ejercicio1()
+                Ejercicio1.Ejercicio1()
                 break
             elif _getInput=='2':
                 Ejercicio2.Ejercicio2()
