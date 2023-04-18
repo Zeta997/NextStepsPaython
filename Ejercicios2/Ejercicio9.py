@@ -13,3 +13,5 @@ def Ejercicio9():
             cadena = cadena[:i] + reemplazo + cadena[i+len(palabra):]
         i += 1
     print(f"El resultado de reemplazar {palabra} por {reemplazo} en la cadena inial, ha sido {cadena}")
+if __name__ == "__main__":
+    Ejercicio9()
