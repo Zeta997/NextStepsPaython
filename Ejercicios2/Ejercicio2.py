@@ -11,3 +11,5 @@ def Ejercicio2():
         print(datetime.now(timezone(zonaHoraria)))
     except Exception as e:
         print(f"Se ha producido el error: \n{e}")
+if __name__ == "__main__":
+    Ejercicio2()

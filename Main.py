@@ -5,6 +5,7 @@ from Ejercicios2 import Ejercicio4
 from Ejercicios2 import Ejercicio5
 from Ejercicios2 import Ejercicio6
 from Ejercicios2 import Ejercicio9
+# from Ejercicios2 import *
 from Ejercicios import Ejercicio7
 from Ejercicios import Ejercicio8
 from Ejercicios import Ejercicio10 
@@ -27,7 +28,7 @@ def _main():
                 print('Fin del programa')
                 break
             elif _getInput=='1':
-                Ejercicio1.ejercicio1()
+                Ejercicio1.Ejercicio1()
                 break
             elif _getInput=='2':
                 Ejercicio2.Ejercicio2()
