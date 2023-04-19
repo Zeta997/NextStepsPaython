@@ -25,4 +25,6 @@ def CompareText():
         else:
             print(_getStringFive)
 
-          
+
+if __name__=="__main__":
+    startProgram()          
