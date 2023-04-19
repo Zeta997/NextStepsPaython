@@ -33,4 +33,6 @@ def CompareVowel():
                 else:
                     break
 
-        
+
+if __name__=="__main__":
+    startPogram()
