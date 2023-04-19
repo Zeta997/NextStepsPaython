@@ -7,7 +7,8 @@ Se realiza la segunda tanda de ejercicios de prácticas, donde se emplean alguno
     - git clone 
   - Crear y activar el entorno virtual
     - Version de Python que esta realizado el proyecto 3.11
-    - Instrucciones (py -m venv env ) tanto para windows como para MacOs
+    - Instrucciones (py -m venv env ) para windows 
+    - Instrucciones (python3 venv env) para MacOs
   - Instalar las librerías (datetime, pytz, zope.interface)
     - `pip install -r requirements.txt`
 
